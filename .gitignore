@@ -1,0 +1,8 @@
+/node_modules
+/public
+
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/veterinary-back-end.iml
+/.idea/prettier.xml
