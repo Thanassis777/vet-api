@@ -14,10 +14,11 @@ import authRouter from './routes/authRouter';
 import appointmentRouter from './routes/appointmentRouter';
 import vetRouter from './routes/vetRouter';
 import clientRouter from './routes/clientRouter';
+import * as path from "path";
 
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Set security HTTP headers
 app.use(helmet());
