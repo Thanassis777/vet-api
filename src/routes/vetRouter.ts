@@ -12,7 +12,7 @@ const vetRouter = express.Router();
 
 vetRouter.use(vetApi.NESTED_APPOINTMENT_URL, setVetFilter, appointmentRouter);
 
-vetRouter.route(vetApi.ROOT_URL).get(protectRouter, getAllVets);
+vetRouter.route(vetApi.ROOT_URL).get(getAllVets);
 
 vetRouter
   .route(vetApi.IDS_URL)
