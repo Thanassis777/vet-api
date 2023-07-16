@@ -43,7 +43,8 @@ var vetRouter_1 = __importDefault(require("./routes/vetRouter"));
 var clientRouter_1 = __importDefault(require("./routes/clientRouter"));
 var path = __importStar(require("path"));
 var app = (0, express_1.default)();
-app.use(express_1.default.static(path.join(__dirname, 'public')));
+app.use(express_1.default.static('public'));
+app.use('/img', express_1.default.static(path.join(__dirname, 'public/img')));
 // Set security HTTP headers
 app.use((0, helmet_1.default)());
 var limiter = (0, express_rate_limit_1.default)({
