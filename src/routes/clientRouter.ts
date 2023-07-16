@@ -18,7 +18,7 @@ const clientRouter = express.Router();
 
 clientRouter.use(clientApi.NESTED_APPOINTMENT_URL, setClientFilter, appointmentRouter);
 
-clientRouter.route(clientApi.ROOT_URL).get(protectRouter, getAllClients);
+clientRouter.route(clientApi.ROOT_URL).get( getAllClients);
 
 clientRouter
   .route(clientApi.IDS_URL)
