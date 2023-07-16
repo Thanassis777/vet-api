@@ -10,4 +10,4 @@ var Specialities;
     Specialities["Orthopedics"] = "orthopedics";
     Specialities["Surgery"] = "surgery";
     Specialities["Other"] = "other";
-})(Specialities = exports.Specialities || (exports.Specialities = {}));
+})(Specialities || (exports.Specialities = Specialities = {}));

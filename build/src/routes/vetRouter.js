@@ -13,7 +13,7 @@ var appointmentRouter_1 = __importDefault(require("./appointmentRouter"));
 var photoUploadingMiddleware_1 = require("../middlewares/photoUploadingMiddleware");
 var vetRouter = express_1.default.Router();
 vetRouter.use(apiUrls_1.vetApi.NESTED_APPOINTMENT_URL, vetControllers_1.setVetFilter, appointmentRouter_1.default);
-vetRouter.route(apiUrls_1.vetApi.ROOT_URL).get(protectRouters_1.protectRouter, vetControllers_1.getAllVets);
+vetRouter.route(apiUrls_1.vetApi.ROOT_URL).get(vetControllers_1.getAllVets);
 vetRouter
     .route(apiUrls_1.vetApi.IDS_URL)
     .get(protectRouters_1.protectRouter, vetControllers_1.getVet)

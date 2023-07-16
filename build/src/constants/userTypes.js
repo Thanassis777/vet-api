@@ -5,4 +5,4 @@ var UserTypes;
 (function (UserTypes) {
     UserTypes["vet"] = "vet";
     UserTypes["client"] = "client";
-})(UserTypes = exports.UserTypes || (exports.UserTypes = {}));
+})(UserTypes || (exports.UserTypes = UserTypes = {}));

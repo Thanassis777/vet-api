@@ -13,7 +13,7 @@ var appointmentRouter_1 = __importDefault(require("./appointmentRouter"));
 var photoUploadingMiddleware_1 = require("../middlewares/photoUploadingMiddleware");
 var clientRouter = express_1.default.Router();
 clientRouter.use(apiUrls_1.clientApi.NESTED_APPOINTMENT_URL, clientControllers_1.setClientFilter, appointmentRouter_1.default);
-clientRouter.route(apiUrls_1.clientApi.ROOT_URL).get(protectRouters_1.protectRouter, clientControllers_1.getAllClients);
+clientRouter.route(apiUrls_1.clientApi.ROOT_URL).get(clientControllers_1.getAllClients);
 clientRouter
     .route(apiUrls_1.clientApi.IDS_URL)
     .get(protectRouters_1.protectRouter, clientControllers_1.getClient)
